@@ -14,7 +14,7 @@ var params = {
 var queryStrng = "INSERT INTO table_nake (column1, column2, column3) VALUES (:value1, :value2, :value3);"
 
 ---
- "INSERT INTO table_nake (column1, column2, column3) VALUES " ++ ((params filterObject ((!isEmpty($))) mapObject ({ myData :"'"++($ as String )++"'"})).*myData joinBy " , ") ++ ");"
+ "INSERT INTO table_nake (column1, column2, column3) VALUES " ++ ((params filterObject ((!isEmpty( $ ))) mapObject ({ myData :"'"++($ as String )++"'"})).*myData joinBy " , ") ++ ");"
 
 
 
@@ -36,8 +36,8 @@ var params = {
     "value3": "abc"
 }
 var queryStrng = "INSERT INTO table_nake (column1, column2, column3) VALUES (:value1, :value2, :value3);"
-var replaceKeys=((params filterObject ((!isEmpty($))) mapObject ({ myData :":"++($$ as String )})).*myData joinBy ", ")
-var replaceValues=((params filterObject ((!isEmpty($))) mapObject ({ myData :"'"++($ as String )++"'"})).*myData joinBy " , ")
+var replaceKeys=((params filterObject ((!isEmpty( $ ))) mapObject ({ myData :":"++($$ as String )})).*myData joinBy ", ")
+var replaceValues=((params filterObject ((!isEmpty( $ ))) mapObject ({ myData :"'"++($ as String )++"'"})).*myData joinBy " , ")
 ---
   
 queryStrng replace replaceKeys with replaceValues
