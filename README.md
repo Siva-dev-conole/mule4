@@ -53,7 +53,7 @@ Third Approach
 --------------------
 
 
-/*<flow name="sampleFlow" doc:id="ab82c311-1b99-4b64-a0fd-2100d4923639" >
+<!--flow name="sampleFlow" doc:id="ab82c311-1b99-4b64-a0fd-2100d4923639" >
 		<scheduler doc:name="Scheduler" doc:id="aa5f7108-46d7-4e43-8669-ab2a2b6d0557" >
 			<scheduling-strategy >
 				<fixed-frequency timeUnit="MINUTES"/>
@@ -75,7 +75,7 @@ output application/json
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="0c5462df-a394-4b47-84ec-6436366fa8e4" message="#[payload]"/>
-	</flow>*/
+	</flow-->
 
 
 
