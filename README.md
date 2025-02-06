@@ -43,6 +43,10 @@ var replaceValues=((params filterObject ((!isEmpty( $ ))) mapObject ({ myData :"
 queryStrng replace replaceKeys with replaceValues
 
 
+output:
+
+"INSERT INTO table_nake (column1, column2, column3) VALUES ('123' , 'xyz' , 'abc');"
+
 
 Third Approach
 
@@ -74,8 +78,5 @@ output application/json
 	</flow>
 
 
-output:
-
-"INSERT INTO table_nake (column1, column2, column3) VALUES ('123' , 'xyz' , 'abc');"
 
 
